@@ -55,11 +55,21 @@ justify-content: flex-end;
     padding-left: 80px;
     padding-top: 350px;
 }
+.description{
+    padding-left: 80px;
+    padding-top: 12px;
+    line-height: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+  }
 .subscribe{
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    padding-left: 100px;
+    padding-left: 80px;
     padding-top: 12px;
     line-height: 63px;
 }
