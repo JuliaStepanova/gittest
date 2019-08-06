@@ -13,7 +13,7 @@
     padding-top: 50px;
     width: 100%;
     height:100%;
-    background-color: rgba(16, 18, 24, 0.73)
+    background-color: rgba(16, 18, 24, 0.63)
 }
 .menu{
     width: 100%;
@@ -52,7 +52,7 @@ justify-content: flex-end;
     line-height: 63px;
     font-size: 52px;
     padding-left: 124px;
-    padding-top: 330px;
+    padding-top: 130px;
 }
 .description{
     padding-left: 124px;
@@ -74,6 +74,8 @@ justify-content: flex-end;
     font-size: 28px;
 }
 .Infoblock{
+    display: flex;
+    flex-wrap: wrap;
     width: 345px;
     height: 142px;
     box-shadow: 4px 4px 4px rgba(229, 229, 229, 0.18);
@@ -84,11 +86,34 @@ justify-content: flex-end;
     display: flex;
     position: relative;
     width: 100%;
-    padding-top: -72px;
+    top: -72px;
 }
 .block{
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
+.textBlock{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 39px;
+    margin-bottom: 43px;
+    width: 100%;
+  }
+  .textBlock>a{
+    display: flex;
+    padding-left: 28px;
+    padding-right: 29px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #397C8F;
+    font-family:'Montserrat', sans-serif;
+  }
+  .strela{
+    display: flex;
+      margin-right: 42px;
+      margin-left: 248px;
+  }
 .baseInfo{
     width: 100%;
     height: 925px;
@@ -120,18 +145,90 @@ justify-content: flex-end;
     justify-content: space-around;
     padding-top: 80px;
 }
+.title-2{
+    font-size: 32px;
+    padding-top: 148px;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
 .objects{
+    display: grid;
     width: 100%;
     height: 750px;
-    background-color: gray;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.photo1{
+    position: relative;
+    background-image: url(/1.png);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.photo2 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-image: url(/img/2.png);
+}
+.photo3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url("/img/3.png");
+}
+.photo4 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-image: url("/img/4.png");
+}
+.photoLabel{
+    margin:30px;
+    margin-top: 200px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
 }
 .contacts{
     width: 100%;
-    height: 750px;
-    background-color: brown;
-}
+    height: 1071px;
+    background-color: rgb(139, 38, 190);
+  }
 .footer{
     width: 100%;
     height: 750px;
     background-color: blueviolet;
+}
+.burger{ 
+    display: none; 
+    } 
+    @media (max-width: 1024px){
+    .blockwrap{ 
+    display: none; 
+    } 
+    .menu{ 
+    display: none; 
+    } 
+    .burger{ 
+    display: inline-block; 
+    margin-left: 20px; 
+    } 
+    .burger > span{ 
+    width: 25px; 
+    height: 2px; 
+    border: 2px solid white; 
+    border-radius: 3px; 
+    background-color: white; 
+    display: block; 
+    margin-bottom: 5px; 
+    }
 }
