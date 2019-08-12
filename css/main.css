@@ -19,7 +19,7 @@
     width: 100%;
     height: 26px;
     padding-right: 100px;
-    padding-left: 300px;
+    padding-left: 200px;
     font-family: 'Montserrat', sans-serif;
 }
 .menu > ul {
@@ -152,51 +152,83 @@ justify-content: flex-end;
     text-align: center;
     color: rgb(255, 255, 255);
   }
-.objects{
-    display: flex;
-    flex-wrap: wrap;
+.block_imgs{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+}
+.imgs{
+flex: 1;
+height: 450px;
+display: flex;
+}
+.adress1, .adress4{
+flex: 1;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.adress2, .adress3{
+  flex: 2;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .adress1{
+    background-image: url('/img/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .adress2{
+    background-image: url('/img/2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .adress3{
+    background-image: url('/3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .adress4{
+    background-image: url('/img/4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .img_fon{
     width: 100%;
-    height: 750px;
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: 25% 25% 25% 25%;
-}
-.photo1{
-    background-image: url(/1.svg);
-    flex: 1;
-    flex-wrap: wrap;
-}
-.photo2 {
-    flex: 2;
-    background-image: url(/img/2.png);
-}
-.photo3 {
-    flex: 2;
-    background-image: url("/img/3.png");
-}
-.photo4 {
-    flex: 1;
-    background-image: url("/img/4.png");
-}
-.photoLabel{
-    margin:30px;
-    margin-top: 200px;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.6);
+    padding-top: 200px;
+  }
+  .img_fon>a{
+    color: #87D9F1;
+    font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-}
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    padding-left: 57px;
+  }
+  .img_fon >a:hover {
+    font-size: 30px;
+    color: rgb(115, 208, 245);
+  }
 .contacts{
   width: 100%;
   height: 1071px;
   background-color: #2C2C2C;
 }
-
 .contactsBlock{
   text-align: center;
   color: rgb(255, 255, 255);
-
 }
 .contactsText{
   font-weight: 600;
@@ -207,7 +239,6 @@ justify-content: flex-end;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
-
 .contactsText2{
   display: flex;
   padding-left: 365px;
@@ -235,7 +266,6 @@ justify-content: flex-end;
   width: 464px;
   margin: 0 auto;
 }
-
 input{
   width: 464px;
   height: 49px;
@@ -253,12 +283,10 @@ textarea{
   border: 1px solid #323232;
   box-sizing: border-box;
   border-radius: 3px;
-
 }
 .comment{
   margin-top: 42px;
 }
-
 .checkbox{
   display: flex;
   justify-content: center;
@@ -270,13 +298,11 @@ textarea{
 input:first-of-type{
   margin-right: 20px;
 }
-
 input[type=checkbox]{
   background: #FFFFFF;
   border-radius: 2px;
   width: 16px;
   height: 16px;
-
 }
 .button_block{
   display: flex;
@@ -338,7 +364,10 @@ input[type=submit]{
 }
 .burger{ 
   display: none; 
-    } 
+    }
+.page{
+  display: none;
+}
   @media (max-width: 1024px){
   .blockwrap{ 
   display: none; 
@@ -359,4 +388,12 @@ input[type=submit]{
   display: block; 
   margin-bottom: 5px; 
     }
+}
+@media (max-width: 1000px){
+  .adress2, .adress3{
+    flex: 1;
+  }
+  .imgs{
+    flex-direction: column;
+  }
 }
